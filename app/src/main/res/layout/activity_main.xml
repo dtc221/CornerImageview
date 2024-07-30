@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapImg"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="50dp"
+        app:srcCompat="@drawable/dtclab221"
+        app:strokeWidth="10dp"
+        app:strokeColor="#eee098"
+        app:shapeAppearanceOverlay="@style/CornerImageview"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/shapImg"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#eee098"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/view"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="100dp"
+    >
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#eee098"
+        android:text="Camera"
+        android:textColor="@color/diakh"
+        android:textSize="22sp"
+
+       />
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#eee098"
+        android:text="Gallery"
+        android:textColor="@color/diakh"
+        android:textSize="22sp"
+        android:layout_toEndOf="@id/camera"
+        android:layout_marginStart="20dp"
+        />
+</RelativeLayout>
+</RelativeLayout>
